@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Hall</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="typed.min.js"></script>
+    <script src="https://use.fontawesome.com/deb5d1df49.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-main">
+            <a class="navbar-brand text-uppercase" href="#">my event hall</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Place</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Halls
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Hall 1</a>
+                            <a class="dropdown-item" href="#">Hall 2</a>
+                            <a class="dropdown-item" href="#">See our halls</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Service 1</a>
+                            <a class="dropdown-item" href="#">Service 2</a>
+                            <a class="dropdown-item" href="#">See our services</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Caterer</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-secondary m-1">Contact & Booking</button>
+                <div class="dropdown m-1">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="langDropDown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="images/us.svg" width="20"/>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item drop-item-1" href="#"><img src="images/us.svg" width="20"/></a>
+                        <a class="dropdown-item drop-item-2" href="#"><img src="images/br.svg" width="20"/></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image image-1 image-filter active">
+                </div>
+                <div class="carousel-item carousel-image image-2 image-filter">
+                </div>
+                <div class="carousel-item carousel-image image-3 image-filter">
+                </div>
+            </div>
+            <a class="carousel-control-prev" data-target="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" data-target="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="jumbo-text">
+            <div class="container text-center">
+                <h1 id="main-text" class="display-3"></h1>
+                <p class="lead">Get the best place for your special moment.</p>
+                <a href="#" class="btn btn-secondary">Book Now</a> 
+            </div>
+        </div>
+        <div class="container">
+            <div id="startchange" class="row">
+                <div class="col-lg-4 card">
+                    <img class="card-img-top" src="images/2.jpg" alt="Service 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Service 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue nisi eu felis suscipit, in
+                            elementum neque aliquam.</p>
+                        <a class="btn btn-outline-dark" href="#" role="button">More Information »</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 card">
+                    <img class="card-img-top" src="images/3.jpg" alt="Service 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Service 2</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue nisi eu felis suscipit, in
+                            elementum neque aliquam.</p>
+                        <a class="btn btn-outline-dark" href="#" role="button">More Information »</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 card">
+                    <img class="card-img-top" src="images/4.jpg" alt="Service 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Service 3</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue nisi eu felis suscipit, in
+                            elementum neque aliquam.</p>
+                        <a class="btn btn-outline-dark" href="#" role="button">More Information »</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/event-1.jpg" class="img-fluid" alt="Generic placeholder image">
+                    <div class="img-title">
+                        <h2>Service 1</h2>
+                    </div>
+                    <p class="lead m-4">Maecenas ullamcorper justo vitae orci semper, eu bibendum neque rutrum. Sed faucibus mauris ut consectetur vehicula. Vestibulum malesuada leo id neque vehicula ullamcorper.</p>
+                    <p class="text-center"><a class="btn btn-outline-dark" href="#" role="button">More Information »</a></p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/event-2.jpg" class="img-fluid" alt="Generic placeholder image">
+                    <div class="img-title">
+                        <h2>Service 2</h2>
+                    </div>
+                    <p class="lead m-4">Maecenas ullamcorper justo vitae orci semper, eu bibendum neque rutrum. Sed faucibus mauris ut consectetur vehicula. Vestibulum malesuada leo id neque vehicula ullamcorper.</p>
+                    <p class="text-center"><a class="btn btn-outline-dark" href="#" role="button">More Information »</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="featurette-divider">
+    <footer>
+        <div class="container">
+            <p class="pt-5"><label class="text-uppercase">MY EVENT HALL</label></p>
+            <div class="row">
+                <div class="col-lg-3 text">
+                    <p class="lead">Vivamus sodales urna id ante sagittis, vitae egestas quam vehicula. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div class="col-lg-2">
+                    <label class="font-weight-bold">Quick Links</label>
+                    <ul class="list-unstyled list">
+                        <li><a class="text-capitalize" href="#">home</a></li>
+                        <li><a class="text-capitalize" href="#">place</a></li>
+                        <li><a class="text-capitalize" href="#">halls</a></li>
+                        <li><a class="text-capitalize" href="#">service</a></li>
+                        <li><a class="text-capitalize" href="#">caterer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <label class="font-weight-bold">Follow us</label>
+                    <ul class="list-unstyled list-inline list">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <label class="font-weight-bold">Contact us</label>
+                    <ul class="list-unstyled list">
+                        <li><a href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>1200 Pennsylvania Ave SE, Washington</span></a></li>
+                        <li><a href="tel:555-555-5555"><i class="fa fa-phone-square" aria-hidden="true"></i> <span>(910) 653-9931</span></a></li>
+                        <li><a href="mailto:someone@example.com?Subject=Contact%20My%20Event%20Mall" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>support@myeventhall.com</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 pb-3 text-muted">
+                Copyright © 2017 My Event Hall. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
